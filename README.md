@@ -1,40 +1,27 @@
-# beemesh.github.io
-Global Scale Computing for long lasting Processes and Functions
+## Overview
+BeeMesh comes as a single binary for datacenters, edge and mobile computing. Service Mesh is not just a pile up complexity but natively incorporated as P2P network. Clustering is a workload concern, as such the nodes do not need consensus or leader election. BeeMesh is designed for massive scale-out and improved software lifecycle.
 
-## Welcome to GitHub Pages
+Just deploy to join the P2P network and start deploying your workloads. The underlying protocol naturally prefers nodes that are been alive for longer over newer entrants. Networking is fully replaced by transport based connectivity. As soon workload is deployed, consensus is deployed as sidecar to the pods. Stateless workload do not need state management. This encourages stateless and zero trust based microservices.
 
-You can use the [editor on GitHub](https://github.com/beemesh/test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Architecture
 
-### Markdown
+![BeeMesh Binary](beemesh.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## API
+Must be K8s compliant so that everybody can move on. GitOps based workload provisioning is strongly advised.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Building Blocks
+* P2P: [https://libp2p.io/](https://libp2p.io/)
+* Workload Clustering: [https://github.com/libp2p/go-libp2p-raft](https://github.com/libp2p/go-libp2p-raft)
+* Container runtime: [https://containerd.io/](https://containerd.io/)
+* Kubernetes: [https://kubernetes.io/](https://kubernetes.io/)
+* Lightweight Kubernetes: [https://k3s.io/](https://k3s.io/)
+* Podman: https://github.com/containers/libpod
+* Example P2P Database: https://github.com/orbitdb
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/beemesh/test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Prototype
+WIP
