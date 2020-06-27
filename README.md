@@ -14,13 +14,13 @@ BeeMesh prioritises connectivity and dissolves the cluster in its present form. 
 
 
 ## Architecture
+![BeeMesh Binary](assets/img/prototype.png)
+
 The underlyings naturally prefer participiants beeing alive for longer over newer entrants. Ranking the peer to peer service mesh over clustering removes the pile up complexity. BeeMesh is designed for massive scale-out in mind. 
 
 Clustering is required solely by stateful workload. As such, the solution context shrinks and becomes disposable.
 
 The whole architecture encourages stateless zero trust based microservices.
-
-![BeeMesh Binary](assets/img/prototype.png)
 
 
 ## API
