@@ -24,4 +24,10 @@ Must be K8s compliant so that everybody can move on. GitOps based workload provi
 
 
 ## Prototype
+
+### Architecture
+
+![BeeMesh Binary](assets/img/prototype.png)
+
+
 WIP
