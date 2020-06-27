@@ -17,7 +17,6 @@ Must be K8s compliant so that everybody can move on. GitOps based workload provi
 * P2P: [https://libp2p.io/](https://libp2p.io/)
 * Workload Clustering: [https://github.com/libp2p/go-libp2p-raft](https://github.com/libp2p/go-libp2p-raft)
 * Container runtime: [https://containerd.io/](https://containerd.io/)
-* Kubernetes: [https://kubernetes.io/](https://kubernetes.io/)
 * Lightweight Kubernetes: [https://k3s.io/](https://k3s.io/)
 * Podman: https://github.com/containers/libpod
 * Example P2P Database: https://github.com/orbitdb
