@@ -10,7 +10,7 @@ Kubernetes can be extended with network virtualization in different forms. Sever
 
 The design decisions and ranking for a) clustering and b) connectivity, although individually exemplary and modularly implemented, lead to limitations in terms of scaling and connectivity.
 
-BeeMesh prioritises connectivity and dissolves the cluster in its present form. This favours cloud native software for long-lasting processing and functions according to today's service and data-centric security concepts. Removing the infrastructure clustering eliminates the scaling limits. This favours the whole mesh life cycle and reduces the administrative efforts.
+BeeMesh prioritises connectivity and dissolves the cluster in its present form. This favours any software for long-lasting processing and functions compatible to today's service and data-centric security concepts. Removing the infrastructure clustering eliminates the scaling limits. This favours the whole mesh life cycle and reduces the administrative efforts.
 
 
 ## Architecture
