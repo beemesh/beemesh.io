@@ -6,7 +6,7 @@ Just deploy to join the P2P network and start deploying your workloads. The unde
 
 ## Architecture
 
-![BeeMesh Binary](beemesh.png)
+![BeeMesh Binary](assets/img/beemesh.png)
 
 
 ## API
