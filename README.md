@@ -30,7 +30,6 @@ A Kubernetes compliant API is encouraged so that workloads can be shifted smooth
 ## Building Blocks
 * P2P: [https://libp2p.io/](https://libp2p.io/)
 * Workload Clustering: [https://github.com/libp2p/go-libp2p-raft](https://github.com/libp2p/go-libp2p-raft)
-* Container runtime: [https://containerd.io/](https://containerd.io/)
 * Lightweight Kubernetes: [https://k3s.io/](https://k3s.io/)
 * Podman: https://github.com/containers/libpod
 * Example P2P Database: https://github.com/orbitdb
