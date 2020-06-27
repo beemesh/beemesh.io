@@ -1,10 +1,22 @@
 ## Overview
-BeeMesh comes as a single binary for datacenters, edge and mobile computing. Service Mesh is not just a pile up complexity but natively incorporated as P2P network. Clustering is a workload concern, as such the nodes do not need consensus or leader election. BeeMesh is designed for massive scale-out and improved software lifecycle.
+BeeMesh comes as a single binary for datacenters, edge and mobile computing. Just deploy to join and start deploying workloads. The underlying protocol naturally prefers nodes that are been alive for longer over newer entrants.
 
-Just deploy to join the P2P network and start deploying your workloads. The underlying protocol naturally prefers nodes that are been alive for longer over newer entrants. Networking is fully replaced by transport based connectivity. As soon workload is deployed, consensus is deployed as sidecar to the pods. Stateless workload do not need state management. This encourages stateless and zero trust based microservices.
+## Problem Statement
+Kubernetes aggregates infrastructure into a single uniform computer. Unity is achieved by a cluster algorithm.The continuous allocation of the workload is done according to this set of rules and repeated as needed. Such uniform computers, also called clusters, usually follow the rules of perimeter security in the data center.
+
+Kubernetes follows a scale-out approach when it comes to increasing the resources available for the workload. The infrastructure used can also be requested on a larger scale for a more advantageous utilization rate.
+
+Kubernetes can be extended with network virtualization in different forms. Several clusters are disjoint and therefore require further extensions such as ISTIO and/or cluster federation. Traditional services are excluded and must be considered separately.
+
+The design decisions and ranking for a) clustering and b) connectivity, although individually exemplary and modularly implemented, lead to limitations in terms of scaling and connectivity.
+
+BeeMesh prioritises connectivity and dissolves the cluster in its present form. This favours today's software for long-lasting processing and functions according to today's concepts for service and data-centric security. By eliminating infrastructure clustering, the scaling limits are eliminated. This favours the life cycle and reduces the administrative effort.
 
 
 ## Architecture
+Service Mesh is not just a pile up complexity but natively incorporated as P2P network. Clustering is a workload concern, as such the nodes do not need consensus or leader election. BeeMesh is designed for massive scale-out and improved software lifecycle.
+
+Networking is fully replaced by transport based connectivity. As soon workload is deployed, consensus is deployed as sidecar to the pods. Stateless workload do not need state management. This encourages stateless and zero trust based microservices.
 
 ![BeeMesh Binary](assets/img/prototype.png)
 
