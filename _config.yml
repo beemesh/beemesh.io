@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: BeeMesh
+description: Global scale computing for long lasting processing and functions
+logo: beemesh.png
+show_downloads: "true"
