@@ -6,7 +6,7 @@ Just deploy to join the P2P network and start deploying your workloads. The unde
 
 ## Architecture
 
-![BeeMesh Binary](assets/img/beemesh.png)
+![BeeMesh Binary](assets/img/prototype.png)
 
 
 ## API
@@ -22,11 +22,13 @@ Must be K8s compliant so that everybody can move on. GitOps based workload provi
 * Example P2P Database: https://github.com/orbitdb
 
 
-## Prototype
+## Longterm
+
+In the long term, an architecture designed for stability is to be set up while retaining the new innovative design decisions. This is to be achieved by considering Cri-O and Kubernetes instead of Podman.
 
 ### Architecture
 
-![BeeMesh Binary](assets/img/prototype.png)
+![BeeMesh Binary](assets/img/beemesh.png)
 
 
 WIP
