@@ -1,10 +1,11 @@
 ## Overview
-BeeMesh comes as a single binary for datacenters, edge and mobile computing. Simply join and start deploy yours.
+BeeMesh comes as a single binary for data centers, edge and mobile computing. Simply join and start deploy on your machines.
+
 
 ## Problem Statement
-Kubernetes aggregates infrastructure as a single uniform computer. Unity is achieved by a cluster algorithm. The continuous allocation of the workload is done according to this set of rules and repeated as needed. Such uniform computers, called clusters, usually follow the rules of perimeter security in the data center.
+Kubernetes aggregates infrastructure as a single uniform computer. Unity is achieved by a cluster algorithm. The continuous allocation of the workload is done according to this set of rules and repeated as needed. Such uniform computers aka clusters, usually follow the rules of perimeter security in the traditional data center.
 
-Kubernetes follows a scale-out approach when it comes to increasing the resources available for the workload. The infrastructure used can also be requested on a larger scale for a more advantageous utilization rate.
+Kubernetes follows a scale-out approach when it comes to increase the available resources for workloads. The infrastructure can also be requested larger eg. scaled-up for a more advantageous utilization rate.
 
 Kubernetes can be extended with network virtualization in different forms. Several clusters are disjoint and therefore require further extensions such as ISTIO and/or cluster federation. Traditional services are excluded and must be considered separately.
 
