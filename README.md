@@ -1,4 +1,4 @@
-## BeeMesh
+## Overview
 BeeMesh combines zero trust data centric security concepts with peer to peer meshing. Decentralized processing, service based meshing and ad-hoc storage are current and foreseeable requirements of towards evolution. Data-centric security is cryptographically and policy-based fundamentally considered.
 
 ## Problem Statement
