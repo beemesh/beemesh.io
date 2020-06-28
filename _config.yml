@@ -1,5 +1,5 @@
 title: BeeMesh
 logo: assets/img/logo.png
-description: Global scale computing for long-lasting processing and functions. BeeMesh comes as a single binary for data centers, edge and mobile computing. Simply join and start deploy on your devices. <p>© 2020. BeeMesh by Flavio Aiello</p>
+description: <p>Global scale computing for long-lasting processing and functions. BeeMesh comes as a single binary for data centers, edge and mobile computing. Simply join and start deploy on your devices.</p><p>© 2020. BeeMesh by Flavio Aiello</p>
 show_downloads: true
 theme: jekyll-theme-minimal
