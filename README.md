@@ -27,11 +27,11 @@ A Kubernetes compliant API is encouraged so that workloads can be shifted smooth
 
 
 ## Building Blocks
-* [Peer-to-peer Networking:](https://libp2p.io/)
-* [Workload Clustering:](https://github.com/libp2p/go-libp2p-raft)
-* [Podman:](https://github.com/containers/libpod)
-* [Lightweight Kubernetes:](https://k3s.io/)
-* [Example P2P Database:](https://github.com/orbitdb)
+* [Peer-to-peer Networking: libp2p](https://libp2p.io/)
+* [Workload Clustering: libp2p-raft](https://github.com/libp2p/go-libp2p-raft)
+* [Podman: easy pod management](https://github.com/containers/libpod)
+* [Lightweight Kubernetes: k3s.io](https://k3s.io/)
+* [Example P2P Database: OrbitDB](https://github.com/orbitdb)
 
 
 ## Longterm
