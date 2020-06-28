@@ -16,10 +16,9 @@ The overall design decisions and ranking made for a) clustering and b) connectiv
 
 BeeMesh prioritises connectivity and dissolves clustering in its present form. Removing the infrastructure clustering eliminates the scaling limits. This favours today's service and data-centric security concepts, life cycle and reduces the administrative efforts.
 
-The underlyings naturally prefer participiants beeing alive for longer over newer entrants. Ranking the peer to peer mesh over clustering removes pile up complexity. BeeMesh is designed for massive scale-out and long-lasting processing and functions in mind. 
+A Kademlia based DHT peer to peer mesh has been alive since 2005. Measurements from the year 2013 show a volume of 10 to 25 million subscribers with a daily volatility of around 10 million. The peer to peer mesh naturally prefers participiants beeing alive for longer over newer entrants. 
 
-Clustering is required solely by stateful workload. As such, the problem context shrinks and becomes disposable. The whole architecture encourages stateless zero trust based microservices.
-
+Upranking the peer to peer mesh over infrastructure state management enables a massive scale-out of stateless based long-lasting processing and functions. Statefullness is solely required by stateful workload. As such, the problem context shrinks to a transient state machine exactly matching the workload lifecycle.
 
 ## Policies
 Peer to peer mesh policies allows you to make long-lasting processing or functions act as a resilient system through controlling how they communicate with each other as well as with external services.
