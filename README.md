@@ -8,15 +8,15 @@ Kubernetes follows a scale-out approach when it comes to increasing the resource
 
 Kubernetes can be extended with network virtualization in different forms. Several clusters are disjoint and therefore require further extensions such as ISTIO and/or cluster federation. Traditional services are excluded and must be considered separately.
 
-The design decisions and ranking for a) clustering and b) connectivity, although individually exemplary and modularly implemented, lead to limitations in terms of scaling and connectivity.
-
-BeeMesh prioritises connectivity and dissolves the cluster in its present form. This favours any software for long-lasting processing and functions compatible to today's service and data-centric security concepts. Removing the infrastructure clustering eliminates the scaling limits. This favours the whole mesh life cycle and reduces the administrative efforts.
+The design decisions and ranking for a) clustering and b) connectivity, although individually exemplary and modularly implemented, lead to limitations in terms of scaling and connectivity in traditional datacenters.
 
 
 ## Architecture
 ![BeeMesh Binary](assets/img/prototype.png)
 
-The underlyings naturally prefer participiants beeing alive for longer over newer entrants. Ranking the peer to peer service mesh over clustering removes the pile up complexity. BeeMesh is designed for massive scale-out in mind. 
+BeeMesh prioritises connectivity and dissolves clustering in its present form. Removing the infrastructure clustering eliminates the scaling limits. This favours the software life cycle, reduces the administrative efforts and today's service and data-centric security concepts.
+
+The underlyings naturally prefer participiants beeing alive for longer over newer entrants. Ranking the peer to peer mesh over clustering removes pile up complexity. BeeMesh is designed for massive scale-out and long-lasting processing and functions in mind. 
 
 Clustering is required solely by stateful workload. As such, the solution context shrinks and becomes disposable.
 
@@ -37,7 +37,8 @@ A Kubernetes compliant API is encouraged so that workloads can be shifted smooth
 
 ## Longterm
 
-In case of reliability issues with podman in the long term, an alternative architecture designed for stability is strongly adivced. This is to be achieved by considering Cri-O and Kubernetes instead of Podman AND while retaining the new innovative design decisions.
+In case of reliability issues with the  in the long term, an alternative architecture designed for stability is strongly adivced. This is to be achieved by considering Cri-O and Kubernetes instead of Podman AND retaining the new innovative design decisions.
+
 
 ### Architecture
 
