@@ -1,3 +1,6 @@
+## BeeMesh
+BeeMesh combines zero trust data centric security concepts with peer to peer meshing. Decentralized processing, service based meshing and ad-hoc storage are current and foreseeable requirements of towards evolution. Data-centric security is cryptographically and policy-based fundamentally considered.
+
 ## Problem Statement
 Kubernetes aggregates infrastructure as a single uniform computer. Unity is achieved by a cluster algorithm. The continuous allocation of workload is done according to this set of rules and repeated as needed. Such uniform computers aka clusters, usually follow the rules of perimeter security.
 
