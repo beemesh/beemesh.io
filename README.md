@@ -1,7 +1,3 @@
-## Overview
-BeeMesh comes as a single binary for data centers, edge and mobile computing. Simply join and start deploy on your devices.
-
-
 ## Problem Statement
 Kubernetes aggregates infrastructure as a single uniform computer. Unity is achieved by a cluster algorithm. The continuous allocation of the workload is done according to this set of rules and repeated as needed. Such uniform computers aka clusters, usually follow the rules of perimeter security.
 
