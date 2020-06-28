@@ -18,9 +18,11 @@ BeeMesh prioritises connectivity and dissolves clustering in its present form. R
 
 The underlyings naturally prefer participiants beeing alive for longer over newer entrants. Ranking the peer to peer mesh over clustering removes pile up complexity. BeeMesh is designed for massive scale-out and long-lasting processing and functions in mind. 
 
-Clustering is required solely by stateful workload. As such, the solution context shrinks and becomes disposable.
+Clustering is required solely by stateful workload. As such, the problem context shrinks and becomes disposable. The whole architecture encourages stateless zero trust based microservices.
 
-The whole architecture encourages stateless zero trust based microservices.
+
+## Policies
+Peer to peer mesh policies allows you to make long-lasting processing or functions act as a resilient system through controlling how they communicate with each other as well as with external services.
 
 
 ## API
