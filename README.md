@@ -18,7 +18,7 @@ BeeMesh prioritises connectivity and dissolves clustering in its present form. R
 
 A Kademlia based DHT peer to peer mesh has been alive since 2005. Measurements from the year 2013 show a volume of 10 to 25 million subscribers with a daily volatility of around 10 million. The peer to peer mesh naturally prefers participiants beeing alive for longer over newer entrants. 
 
-Upranking the peer to peer mesh over infrastructure state management enables a massive scale-out of stateless based long-lasting processing and functions. State management is solely required by stateful workload. As such, the problem context shrinks to a transient state machine exactly matching the workload lifecycle.
+Priorisation the peer to peer mesh over infrastructure state management enables a massive scale-out of stateless based long-lasting processing and functions. Stateless workload is notified by a publish/subscribe pattern where peers congregate around topics they are interested in. State management is solely required by stateful workload. As such, the problem context shrinks to a transient state machine exactly matching the workload lifecycle.
 
 ## Policies
 Peer to peer mesh policies allows you to make long-lasting processing or functions act as a resilient system through controlling how they communicate with each other as well as with external services.
