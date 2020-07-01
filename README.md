@@ -3,7 +3,7 @@ BeeMesh combines zero trust data centric security with peer to peer concepts. De
 
 
 ## Problem Statement
-Kubernetes aggregates infrastructure as a single uniform computer. Unity is achieved by a cluster algorithm. The continuous allocation of workload is done according to this set of rules and repeated as needed. Such uniform computers aka clusters, usually follow the rules of perimeter security.
+Kubernetes aggregates infrastructure as a single uniform computer. Unity is achieved by a cluster algorithm. The continuous allocation of workload is done according to this set of rules and the runtime is continuously reconciliated. Such uniform computers aka clusters, usually follow the rules of perimeter security.
 
 Kubernetes follows a scale-out approach when it comes to increase the available resources for workloads. The infrastructure can also be requested larger eg. scaled-up for a more advantageous utilization rate.
 
