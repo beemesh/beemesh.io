@@ -1,5 +1,6 @@
 ## Overview
-BeeMesh combines zero trust data centric security with peer to peer concepts. Decentralized processing, service based meshing and ad-hoc storage are current and foreseeable requirements of towards evolution. Data-centric security is cryptographically and policy-based fundamentally considered.
+BeeMesh combines zero trust data centric security with peer to peer concepts. Decentralized processing, service based meshing and ad-hoc storage are current and foreseeable requirements of towards evolution. This requires data-centric security based on cryptography and policies.
+
 
 ## Problem Statement
 Kubernetes aggregates infrastructure as a single uniform computer. Unity is achieved by a cluster algorithm. The continuous allocation of workload is done according to this set of rules and repeated as needed. Such uniform computers aka clusters, usually follow the rules of perimeter security.
