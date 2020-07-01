@@ -21,8 +21,7 @@ A Kademlia based DHT peer to peer mesh has been alive since 2005. Measurements f
 Priorisation the peer to peer mesh over infrastructure state management enables a massive scale-out of stateless based long-lasting processing and functions. Stateless workload is notified by a [publish/subscribe](https://docs.libp2p.io/concepts/publish-subscribe/) pattern where peers congregate around topics they are interested in. State management is solely required by stateful workload. As such, the problem context shrinks to a transient state machine exactly matching the workload lifecycle.
 
 ## Policies
-Peer to peer mesh policies allows you to make long-lasting processing or functions act as a resilient system through controlling how they communicate with each other as well as with external services.
-
+Peer to peer mesh policies allows you to make long-lasting processing or functions act as a resilient system through controlling how they communicate with each other as well as with external services. As such, a [general-purpose policy engine](https://www.openpolicyagent.org) that enables unified, context-aware policy enforcement across the entire mesh should be taken in to consideration.
 
 ## API
 A Kubernetes compliant API is encouraged so that workloads can be shifted smoothly.
@@ -34,7 +33,7 @@ A Kubernetes compliant API is encouraged so that workloads can be shifted smooth
 * Standalone pods: [Podman](https://github.com/containers/libpod)
 * Lightweight Kubernetes: [k3s.io](https://k3s.io/)
 * Example P2P Database: [OrbitDB](https://github.com/orbitdb)
-
+* Varlink Interface: [Varlink](https://varlink.org/)
 
 ## Longterm
 A reconsideration of Cri-O and Kubernetes instead of Podman while retaining the new innovative design decisions is possible. This will be evaluated on a second stage.
