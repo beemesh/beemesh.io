@@ -1,5 +1,5 @@
 ## Overview
-BeeMesh combines zero trust data centric security with peer to peer concepts. Decentralized processing, service based meshing and ad-hoc storage are current and foreseeable requirements of towards evolution. This requires data-centric security based on cryptography and policies.
+BeeMesh combines zero trust security with peer to peer concepts. Decentralized processing, service based meshing and ad-hoc storage are current and foreseeable requirements of towards evolution. This requires policies based on authentication and cryptography.
 
 
 ## Problem Statement
@@ -15,7 +15,7 @@ The overall design decisions and ranking made for a) clustering and b) connectiv
 ## Architecture
 ![BeeMesh Binary](assets/img/prototype.png)
 
-BeeMesh prioritises connectivity and dissolves clustering in its present form. Removing the infrastructure clustering eliminates the scaling limits. This favours today's service and data-centric security concepts, life cycle and reduces the administrative efforts.
+BeeMesh prioritises connectivity and dissolves clustering in its present form. Removing the infrastructure clustering eliminates the scaling limits. This favours today's security concepts, life cycle and reduces the administrative efforts.
 
 A Kademlia based DHT peer to peer mesh has been alive since 2005. Measurements from the year 2013 show a volume of 10 to 25 million subscribers with a daily volatility of around 10 million. The peer to peer mesh naturally prefers participiants beeing alive for longer over newer entrants. 
 
