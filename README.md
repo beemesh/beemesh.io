@@ -40,3 +40,4 @@ A Kubernetes compliant API is encouraged so that workloads can be shifted smooth
 A reconsideration of Cri-O and Kubernetes instead of Podman while retaining the new innovative design decisions is possible. This will be evaluated on a second stage.
 
 ![BeeMesh Binary](assets/img/beemesh.png)
+
