@@ -24,7 +24,7 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
-    font-size: 20px;
+    font-size: 25px;
     display: block;
     line-height: 1;
     color: #FFF;
@@ -34,13 +34,13 @@
     }
   }
   .site-description {
-    font-size: 12px;
+    font-size: 10px;
     display: block;
     line-height: 1;
     color: #FFF;
     margin-top: 10px;
     @media only screen and (min-width:$cut){
-      font-size: 25px;
+      font-size: 15px;
     }
   }
 }
