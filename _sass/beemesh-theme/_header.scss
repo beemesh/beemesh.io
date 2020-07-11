@@ -18,7 +18,7 @@
   text-align: center;
   color:#FFF;
   position: absolute;
-  top: 25%;
+  top: 50%;
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
@@ -38,7 +38,7 @@
     display: block;
     line-height: 1;
     color: #FFF;
-    margin-top: 15px;
+    margin-top: 10px;
     @media only screen and (min-width:$cut){
       font-size: 20px;
     }
