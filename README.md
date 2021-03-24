@@ -1,5 +1,5 @@
 ## Vision
-Imagine a world where everyone understands each other. Work would be organized continuously based on ability, capacity and trustworthiness. If statefulness is required, ephemeral consensus lifes alongside the work lifecycle. Would such a computing model scale globally?
+Imagine a world where everyone understands each other. Work would be organized continuously based on ability, capacity and trustworthiness. If statefulness is required, ephemeral consensus lifes alongside the work. Would such a computing model scale globally?
 
 ## Problem Statement
 Kubernetes aggregates infrastructure as a single uniform computer. Unity is achieved by a cluster algorithm. The continuous allocation of workload is done according to this set of rules and the runtime is continuously reconciliated. Such uniform computers aka clusters, usually follow the rules of perimeter security.
