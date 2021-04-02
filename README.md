@@ -24,7 +24,7 @@ Peer to peer mesh policies allows you to make long-lasting processing or functio
 A Kubernetes compliant API is encouraged so that workloads can be shifted smoothly.
 
 
-## Related Projects
+## Related
 * Peer-to-peer: [libp2p](https://libp2p.io/)
 * Consensus: [libp2p-raft](https://github.com/libp2p/go-libp2p-raft)
 * Standalone pods: [Podman](https://github.com/containers/libpod)
