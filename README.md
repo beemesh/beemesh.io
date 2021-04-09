@@ -25,7 +25,6 @@ Peer to peer mesh policies allows you to make long-lasting processing or functio
 * Consensus: [libp2p-raft](https://github.com/libp2p/go-libp2p-raft)
 * IPFS Clusters: [IPFS-Cluster](https://cluster.ipfs.io/)
 * Standalone pods: [Podman](https://github.com/containers/libpod)
-* Lightweight Kubernetes: [k3s.io](https://k3s.io/)
 * P2P CRDT: [OrbitDB](https://github.com/orbitdb)
 * Userland networking: [slirp4netns](https://github.com/rootless-containers/slirp4netns)
 * Fast Userland networking: [bypass4netns](https://github.com/rootless-containers/bypass4netns)
