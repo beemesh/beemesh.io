@@ -29,7 +29,6 @@ Peer to peer mesh policies allows you to make long-lasting processing or functio
 * Userland networking: [slirp4netns](https://github.com/rootless-containers/slirp4netns)
 * Fast Userland networking: [bypass4netns](https://github.com/rootless-containers/bypass4netns)
 * Rootless Kubernetes: [usernetes](https://github.com/rootless-containers/usernetes)
-* Userland networking: [slirp4netns](https://github.com/rootless-containers/slirp4netns)
 * Varlink Interface: [Varlink](https://varlink.org/)
 
 ## Longterm
