@@ -1,4 +1,4 @@
-## Rethink the Dynamic Digital Landscape
+## Vision
 
 In today's rapidly evolving digital landscape, traditional paradigms of system architecture and security are being put to the test. The demand for more flexible, resilient, and scalable systems is growing, prompting us to reconsider long-standing concepts and methodologies.
 
