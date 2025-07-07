@@ -469,7 +469,7 @@ func (s *ApiServer) createDeployment(w http.ResponseWriter, r *http.Request) {
 		podName := fmt.Sprintf("%s-%s", deploy.Name, uuid.New().String()[:8]) // Unique name
 		if pod.Containers == nil || len(pod.Containers) == 0 {
             log.Printf("Warning: Deployment %s Pod has no containers specified. Adding dummy.", deploy.Name)
-            pod.Containers = []corev1.Container{{Name: "dummy", Image: "alpine/git", Command: []string{"sleep", "3600"}}}
+            pod.Containers = []corev1.Container{ {Name: "dummy", Image: "alpine/git", Command: []string{"sleep", "3600"} }}
         }
 
 		// Inject stateless watchdog sidecar if specified in manifest
@@ -549,7 +549,7 @@ func (s *ApiServer) createStatefulSet(w http.ResponseWriter, r *http.Request) {
 
 		if pod.Containers == nil || len(pod.Containers) == 0 {
             log.Printf("Warning: StatefulSet %s Pod has no containers specified. Adding dummy.", ss.Name)
-            pod.Containers = []corev1.Container{{Name: "dummy", Image: "alpine/git", Command: []string{"sleep", "3600"}}}
+            pod.Containers = []corev1.Container{ {Name: "dummy", Image: "alpine/git", Command: []string{"sleep", "3600"} }}
         }
 
 		// Inject Raft sidecar
@@ -566,12 +566,12 @@ func (s *ApiServer) createStatefulSet(w http.ResponseWriter, r *http.Request) {
                     {Name: "BEEMESH_DESIRED_REPLICAS", Value: fmt.Sprintf("%d", *ss.Spec.Replicas)},
                     {Name: "BEEMESH_SCHEDULER_TOPIC", Value: schedulerTopicID}, // Pass Pub/Sub topic for clone
 				},
-				Ports: []corev1.ContainerPort{{ContainerPort: ss.Spec.RaftSidecar.Port}},
+				Ports: []corev1.ContainerPort{ {ContainerPort: ss.Spec.RaftSidecar.Port} },
 				// Mount data volume for Raft state (for POC, emptyDir or hostPath)
-				VolumeMounts: []corev1.VolumeMount{{
+				VolumeMounts: []corev1.VolumeMount{ {
 					Name:      "raft-data",
 					MountPath: "/var/lib/raft",
-				}},
+				} },
 			}
 			pod.Containers = append(pod.Containers, raftContainer)
             pod.Volumes = append(pod.Volumes, corev1.Volume{
@@ -778,7 +778,7 @@ func cloneTask(ctx context.Context, schedulerTopic *pubsub.Topic, parentKind, pa
 	// --- IMPORTANT: This Pod template should come from the original Deployment definition ---
 	// For POC, we might have a hardcoded base template or assume sidecar can reconstruct.
 	basePodSpec := corev1.PodSpec{
-		Containers: []corev1.Container{{
+		Containers: []corev1.Container { {
 			Name: "cloned-app",
 			Image: "nginx:latest", // Needs to be configurable or derived from original
 			// ... other app container details
@@ -792,7 +792,7 @@ func cloneTask(ctx context.Context, schedulerTopic *pubsub.Topic, parentKind, pa
 				{Name: "BEEMESH_SCHEDULER_TOPIC", Value: schedulerTopic.ID()},
 				{Name: "BEEMESH_WATCHDOG_COORD_TOPIC", Value: os.Getenv("BEEMESH_WATCHDOG_COORD_TOPIC")},
 			},
-		}},
+		} },
         RestartPolicy: corev1.RestartPolicyAlways,
 	}
 
@@ -962,7 +962,7 @@ func cloneRaftTask(ctx context.Context, schedulerTopic *pubsub.Topic, parentKind
 	// --- IMPORTANT: This Pod template should come from the original StatefulSet definition ---
 	// For POC, we reconstruct or assume access to the original template.
 	basePodSpec := corev1.PodSpec{
-		Containers: []corev1.Container{{
+		Containers: []corev1.Container { {
 			Name: "cloned-app",
 			Image: "my-app-image:latest", // Needs to be configurable or derived
 			// ... other app container details
@@ -978,15 +978,15 @@ func cloneRaftTask(ctx context.Context, schedulerTopic *pubsub.Topic, parentKind
 				{Name: "BEEMESH_DESIRED_REPLICAS", Value: os.Getenv("BEEMESH_DESIRED_REPLICAS")},
 				{Name: "BEEMESH_SCHEDULER_TOPIC", Value: schedulerTopic.ID()},
 			},
-			Ports: []corev1.ContainerPort{{ContainerPort: raftPort}},
-			VolumeMounts: []corev1.VolumeMount{{Name: "raft-data", MountPath: "/var/lib/raft"}},
-		}},
+			Ports: []corev1.ContainerPort{ {ContainerPort: raftPort} },
+			VolumeMounts: []corev1.VolumeMount{ {Name: "raft-data", MountPath: "/var/lib/raft"} },
+		} },
         Hostname: clonedPodName,
         Subdomain: os.Getenv("BEEMESH_SERVICE_NAME"), // Needs to be passed
-        Volumes: []corev1.Volume{{
+        Volumes: []corev1.Volume{ {
             Name: "raft-data",
-            VolumeSource: corev1.VolumeSource{EmptyDir: &corev1.EmptyDirVolumeSource{}},
-        }},
+            VolumeSource: corev1.VolumeSource{EmptyDir: &corev1.EmptyDirVolumeSource{} },
+        } },
         RestartPolicy: corev1.RestartPolicyAlways,
 	}
 
